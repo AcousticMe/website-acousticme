@@ -1,0 +1,172 @@
+:root {
+    --blue: #5952FF;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    background-color: #F1F1F1;
+
+    height: 100vh;
+
+    overflow-y: hidden;
+}
+
+span {
+    color: var(--blue);
+    font-weight: 700;
+}
+
+span:hover {
+    color: #423dc8;
+}
+
+
+header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+
+    padding: 2rem 2rem;
+}
+
+header img[alt~="Logo"] {
+    width: 100%;
+    max-width: 150px;
+}
+
+main {
+    padding: 0 2rem;
+    height: 70vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+}
+
+main>div {
+    width: 100%;
+    max-width: 470px;
+}
+
+main div h1 {
+    color: var(--blue);
+    font-size: 4rem;
+    text-align: center;
+}
+
+main div p {
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 3rem;
+}
+
+main .input-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+
+main .input-content input {
+    width: 100%;
+    padding: 1.2rem 3.5rem;
+    border: none;
+    border-radius: 10px;
+    border: 2px solid transparent;
+
+    font-weight: 600;
+}
+
+main .input-content div {
+    position: relative;
+}
+
+main .input-content img:nth-of-type(1) {
+    position: absolute;
+    left: 20px;
+    top: 15px;
+}
+
+main .input-content input[type~="submit"] {
+    background-color: #5952FF;
+    color: white;
+    font-weight: 700;
+    transition: .2s;
+    margin-top: 2rem;
+}
+
+main .input-content input[type~="submit"]:hover {
+    cursor: pointer;
+    background-color: #423dc8;
+    transition: .2s;
+
+}
+
+main .input-content input:focus {
+    outline: none;
+    border: 2px solid var(--blue);
+}
+
+main a {
+    color: black;
+    text-decoration: none;
+    text-align: right;
+    width: 100%;
+
+    position: absolute;
+    left: 0;
+    top: 70px;
+}
+
+
+main aside img {
+    width: 100%;
+    max-width: 400px;
+
+    z-index: 1000;
+    position: relative;
+}
+
+.bolha {
+    background-color: var(--blue);
+    position: absolute;
+    top: -100px;
+    right: 0;
+
+    width: 45%;
+    height: 115vh;
+    z-index: 5;
+
+    border-radius: 100% 0 0 100%;
+}
+
+.bolhaSignin {
+    background-color: var(--blue);
+    position: absolute;
+    top: -100px;
+    left: 0;
+
+    width: 45%;
+    height: 115vh;
+    z-index: 5;
+
+    border-radius: 0 100% 100% 0;
+}
+
+@media (max-width: 800px) {
+
+    aside,
+    .bolha,
+    .bolhaSignin {
+        display: none;
+    }
+}
