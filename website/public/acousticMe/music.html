@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- METADATAS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+
+    <!-- TITLE -->
+    <title>Document</title>
+</head>
+
+<body>
+    <aside>
+        <img src="../src/logo.png" alt="Logo">
+
+        <h3>Navegar</h3>
+        <nav>
+            <ul>
+                <li> <a style="color: #5952FF;" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-home">
+                            <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                            <polyline points="9 22 9 12 15 12 15 22" />
+                        </svg> <span>Ínicio</span></a></li>
+                <li><a href="dashboard.html"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bar-chart">
+                            <line x1="12" x2="12" y1="20" y2="10" />
+                            <line x1="18" x2="18" y1="20" y2="4" />
+                            <line x1="6" x2="6" y1="20" y2="16" />
+                        </svg><span>Dashboard</span></a></li>
+                <li>
+                    <a href="newMusic.html" id="new-music">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-bolt">
+                            <path
+                                d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                            <circle cx="12" cy="12" r="4" />
+                        </svg>
+                        <span>Gerenciar </span></a>
+                </li>
+                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-library-big">
+                            <rect width="8" height="18" x="3" y="3" rx="1" />
+                            <path d="M7 3v18" />
+                            <path
+                                d="M20.4 18.9c.2.5-.1 1.1-.6 1.3l-1.9.7c-.5.2-1.1-.1-1.3-.6L11.1 5.1c-.2-.5.1-1.1.6-1.3l1.9-.7c.5-.2 1.1.1 1.3.6Z" />
+                        </svg><span>Sobre</span></a></li>
+            </ul>
+            <ul>
+                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-heart-handshake">
+                            <path
+                                d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+                            <path
+                                d="M12 5 9.04 7.96a2.17 2.17 0 0 0 0 3.08v0c.82.82 2.13.85 3 .07l2.07-1.9a2.82 2.82 0 0 1 3.79 0l2.96 2.66" />
+                            <path d="m18 15-2-2" />
+                            <path d="m15 18-2-2" />
+                        </svg><span>Ajuda</span></a></li>
+                <li><a id="logOut" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-log-out">
+                            <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
+                            <polyline points="16 17 21 12 16 7" />
+                            <line x1="21" x2="9" y1="12" y2="12" />
+                        </svg><span>Sair</span></a></li>
+            </ul>
+        </nav>
+
+    </aside>
+
+    <main>
+        <header class="titulo">
+            <h1> <a href="index.html">
+                    < </a> / Música</h1>
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-headphones">
+                <path
+                    d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3" />
+            </svg>
+        </header>
+
+        <div class="music-info-content">
+            <div class="card-music music-informations">
+
+                <div>
+                    <div>
+                        <h3 id="music-name">War Nuns</h3>
+                        <p id="artist-name">Misfits</p>
+                    </div>
+
+                    <div>
+                        <p id="music-genre"> Rock </p>
+                        <a id="link-music" href="#" target="_blank"> <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-corner-down-right">
+                                <polyline points="15 10 20 15 15 20" />
+                                <path d="M4 4v7a4 4 0 0 0 4 4h12" />
+                            </svg> Veja a música original</a>
+                    </div>
+                </div>
+
+                <img id="music-img"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXeetSokD796hFf4o8wXY25eghNvG6DeNu96OnsqQhMQ&s"
+                    alt="Imagem Album">
+            </div>
+
+            <div class="card-music chords">
+                <h3>Acordes presentes na música</h3>
+                <p id="chords"> G, Bm, Dm, D, F </p>
+            </div>
+
+        </div>
+
+        <div class="card-music music-video">
+            <iframe id="music-demonstration" src="https://www.youtube.com/embed/0KRW2sPE1i8?list=RD0KRW2sPE1i8"
+                picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen></iframe>
+            <div>
+                <h3>Descrição</h3>
+                <p id="description"> </p>
+            </div>
+        </div>
+
+
+    </main>
+
+    <script src="../script/music.js"></script>
+    <script src="../script/session.js"></script>
+
+
+</body>
+
+</html>

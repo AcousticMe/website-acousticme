@@ -41,25 +41,29 @@
 
             <div class="input-content">
                 <div>
-                    <input type="text" placeholder="usuário" autofocus />
+                    <input type="text" id="input_name" placeholder="usuário" autofocus />
+                    
                     <img class="icon" src="src/usericon.png" alt="">
                 </div>
                 <div>
-                    <input type="text" placeholder="senha" />
+                    <input type="password" id="input_passwd" placeholder="senha" />
                     <img src="src/passwd.png" alt="passwd">
                 </div>
                 <div>
-                    <input type="text" placeholder="confirmar senha" />
+                    <input type="password" id="input_confirmPasswd" placeholder="confirmar senha" />
                     <img src="src/passwd.png" alt="passwd">
                     <a href="./login.html"> Já tem uma conta? <span>Logar</span> </a>
                 </div>
 
-                <input type="submit" value="LOGAR" />
+                <input type="submit" id="input_submit" value="LOGAR" />
+                <span id="output-error"></span>
             </div>
         </div>
     </main>
 
     <div class="bolhaSignin"></div>
+
+    <script src="./script/signUp.js"></script>
 
 </body>
 
