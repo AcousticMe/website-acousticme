@@ -39,7 +39,6 @@ function getMusic() {
             musicDemonstration.src = data.linkVideoDemonstracao
             descriptionMusic.textContent = data.descricao
 
-
             if (data.ritmo) {
                 const rhythm = document.createElement('div')
 
