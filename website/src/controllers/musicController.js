@@ -28,8 +28,10 @@ function postMusic(req, res) {
     const demonstrationVideoLink = req.body.demonstrationVideoLink
     const originalVideoLink = req.body.originalVideoLink 
     const description = req.body.description
+    const rhythm = req.body.rhythm
 
-    musicModel.postMusic(musicName, artist, genre, chords, linkMusicImage, demonstrationVideoLink, originalVideoLink, description)
+
+    musicModel.postMusic(musicName, artist, genre, chords, linkMusicImage, demonstrationVideoLink, originalVideoLink, description, rhythm)
         .then(music => {
             return res.status(201).json({ msg: "Música postada!", music })
         })
@@ -44,9 +46,17 @@ function deleteMusic(req, res) {
     })
 }
 
+function getAllRhythm(req, res) {
+    musicModel.getAllRhythm(req, res)
+    .then(rhythm => {
+        return res.status(200).json(rhythm)
+    })
+}
+
 module.exports = {
     searchAllMusic,
     searchMusicById,
     postMusic,
-    deleteMusic
+    deleteMusic,
+    getAllRhythm
 }

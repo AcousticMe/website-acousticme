@@ -273,16 +273,34 @@ main .music-informations a:hover {
     color: #4a45d6;
 }
 
-main .chords {
+main .chords-rhythm {
     border-radius: 0;
     background-color: #f7f7ff;
+
+    display: flex;
 }
 
-main .chords p {
+main .chords-rhythm>div:nth-child(2) {
+    margin-left: 40px;
+    padding-left: 40px;
+    border-left: 10px solid #5752f9;
+
+    font-weight: 900;
+}
+
+main .chords-rhythm p {
     margin-top: 1rem;
 
     font-weight: 700;
     font-size: 1.4rem;
+    color: #5952FF;
+}
+
+main .chords-rhythm div:nth-child(2) p {
+    font-size: 2.5rem;
+}
+
+main .chords-rhythm span {
     color: #5952FF;
 }
 
@@ -372,13 +390,13 @@ main .config-musica {
     margin-top: 2rem;
 }
 
-main .config-musica > div:nth-child(1)  {
+main .config-musica>div:nth-child(1) {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-main .config-musica > div:nth-child(1) a  {
+main .config-musica>div:nth-child(1) a {
     background-color: #5752f9;
     color: white;
     gap: 10px;
@@ -390,7 +408,7 @@ main .config-musica > div:nth-child(1) a  {
     align-items: center;
 }
 
-main .config-musica > div:nth-child(1) a:hover {
+main .config-musica>div:nth-child(1) a:hover {
     background-color: #4f4bda;
 }
 
@@ -400,6 +418,7 @@ main .config-musica h1 {
 
 main .musics-content {
     margin-top: 1rem;
+    overflow: scroll;
 }
 
 main .musics-content .info-table-content {
@@ -418,7 +437,7 @@ main .musics-content .info-table-content:nth-of-type(1) {
 
 table {
     width: 100%;
-}   
+}
 
 td {
     text-align: center;
@@ -517,12 +536,20 @@ main .input-content>div:nth-child(1)>div,
     flex: 1;
 }
 
-main .form-content input, .form-content textarea {
+main .form-content input,
+.form-content textarea,
+.form-content select {
+    background-color: white;
     font-weight: 700;
     width: 100%;
     padding: 1.2rem .7rem;
     border-radius: 7px;
     border: 3px solid #5752f96d;
+}
+
+main .form-content option {
+    padding: 10px;
+    font-size: 1.2rem;
 }
 
 main .form-content input[type="submit"] {
@@ -539,6 +566,7 @@ main .form-content input[type="submit"]:hover {
 main .form-content input:focus {
     outline: none;
 }
+
 
 .warning {
     display: none;
@@ -585,7 +613,9 @@ main .form-content input:focus {
 @keyframes slide {
     0% {
         transform: translate(200px);
-    } 100% {
+    }
+
+    100% {
         transform: translate(0);
 
     }
@@ -663,8 +693,13 @@ main .form-content input:focus {
     }
 
     main .card img {
-        max-width: 700px;
+        max-width: 70px;
     }
+
+    main .card {
+        flex-direction: column;
+    }
+
 }
 
 @media (max-width: 500px) {

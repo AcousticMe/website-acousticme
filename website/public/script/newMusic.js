@@ -8,12 +8,12 @@ function postMusic() {
     const artist = document.querySelector("#artist")
     const genre = document.querySelector("#genre")
     const chords = document.querySelector("#chords")
+    const rhythm = document.querySelector("#rhythm")
     const musicImage = document.querySelector("#music-image")
     const originalVideo = document.querySelector("#original-video")
     const demonstrationVideo = document.querySelector("#demonstration-video")
     const description = document.querySelector("#description")
     const warning = document.querySelector(".warning")
-
 
     const data = {
         musicName: nameMusic.value,
@@ -23,7 +23,8 @@ function postMusic() {
         linkMusicImage: musicImage.value,
         demonstrationVideoLink: demonstrationVideo.value,
         originalVideoLink: originalVideo.value,
-        description: description.value
+        description: description.value,
+        rhythm: rhythm.value
     }
 
     fetch(`http://localhost:3333/music`, {
@@ -48,5 +49,29 @@ function postMusic() {
         })
 
         .catch(error => console.error(error))
-
 }
+
+function getRhythm() {
+
+    const rhythm = document.querySelector("#rhythm")
+
+
+    fetch(`http://localhost:3333/rhythm`)
+    .then(response => response.json())
+    .then(data => {
+
+        data.forEach(element => {
+            
+            const option = document.createElement('option')
+
+            option.value = element.id
+            option.innerText = element.ritmo
+
+            rhythm.append(option)
+
+        });
+
+    }) 
+}
+
+getRhythm()

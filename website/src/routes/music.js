@@ -30,4 +30,10 @@ router.delete("/music/:id", (req, res) => {
 })
 
 
+// GET ALL RHYTHM
+
+router.get("/rhythm", (req, res) => {
+    musicController.getAllRhythm(req, res)
+})
+
 module.exports = router;
