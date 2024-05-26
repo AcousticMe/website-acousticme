@@ -47,7 +47,6 @@ function getAllRhythm() {
 
     const sql = `SELECT * FROM ritmo; `
 
-
     return database.execute(sql)
 }
 

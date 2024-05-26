@@ -130,7 +130,12 @@ main .category {
     margin: 2rem 0;
 }
 
-main .category a {
+.changeColor {
+    background-color: #5952FF;
+    color: white;
+}
+
+main .category span {
     padding: 1rem 2.5rem;
     border-radius: 20px;
 
@@ -139,9 +144,10 @@ main .category a {
 
     font-weight: 600;
     transition: .1s;
+    cursor: pointer;
 }
 
-main .category a:hover {
+main .category span:hover {
     background-color: #6360ff0c;
     color: black;
 
@@ -161,6 +167,7 @@ main .card-content .card {
     background-color: white;
 
     cursor: pointer;
+    transition: 1s;
 
     font-weight: 500;
     transition: .3s;

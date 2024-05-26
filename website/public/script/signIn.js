@@ -52,7 +52,6 @@ function signIn() {
                         setTimeout(() => {
                             window.location = "./acousticMe/index.html"
                         }, 1000)
-
                     })
 
                 } else {

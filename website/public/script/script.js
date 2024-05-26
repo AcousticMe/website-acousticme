@@ -1,3 +1,27 @@
+function filterMusic(genreMusic) {
+
+    const cards = document.querySelector(".card-content")
+    let card;
+    
+    const genre = cards.getElementsByTagName("span");
+    
+    for (let count = 0; count < genre.length; count++) {
+        
+        let span = genre[count]
+        card = cards.getElementsByTagName("a")[count]
+
+        if (genreMusic.indexOf(span.textContent) > -1) {
+            card.style.display = "block"
+        } else if (genreMusic == "Tudo") {
+            card.style.display = "block"
+        } else {
+            card.style.display = "none"
+        }
+
+    }
+}
+
+
 // ROUTE API
 
 
@@ -24,7 +48,7 @@ function getAllMusic(api) {
                 <div>
                 <div>
                     <h2>${element.nome}</h2>
-                    <p>${element.genero}</p>
+                    <span>${element.genero}</span>
                 </div>
                 <p class="description">${element.descricao} </p> 
                 </div>

@@ -4,11 +4,19 @@ const queryString = window.location.search
 const params = new URLSearchParams(queryString)
 const id = params.get('id')
 
+
+function filterMusic() {
+    
+}
+
+
 // ROUTE API
 
 const api = `http://localhost:3333/music/${id}`
 
 // GET MUSIC BY ID
+
+
 
 function getMusic() {
 
