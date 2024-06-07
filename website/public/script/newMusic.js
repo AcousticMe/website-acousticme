@@ -42,7 +42,7 @@ function postMusic() {
 
                     warning.style.display = "none"
 
-                }, 3000)
+                }, 3333)
                
             } 
 

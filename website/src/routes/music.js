@@ -29,11 +29,22 @@ router.delete("/music/:id", (req, res) => {
     musicController.deleteMusic(req, res)
 })
 
-
 // GET ALL RHYTHM
 
 router.get("/rhythm", (req, res) => {
     musicController.getAllRhythm(req, res)
+})
+
+// GET COUNT GENRE
+
+router.get("/genre", (req, res) => {
+    musicController.countGenre(req, res)
+})
+
+// GET ARTISTS
+
+router.get("/artists", (req, res) => {
+    musicController.artists(req, res)
 })
 
 module.exports = router;

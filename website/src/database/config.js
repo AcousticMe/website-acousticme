@@ -2,12 +2,14 @@ const mysql = require("mysql2");
 
 
 const mySqlConfig = {
-    host: 'localhost',
-    database: 'acousticMe',
-    user: 'root',
-    password: '17131',
-    port: 3306
+    host: "127.0.0.1",
+    database: "acousticMe",
+    user: "userremote",
+    password: "Miguel@123",
+    port: 3307
 };
+
+
 
 function execute(instruction) {
 

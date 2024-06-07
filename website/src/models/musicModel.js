@@ -51,10 +51,35 @@ function getAllRhythm() {
 }
 
 
+function countGenre() {
+
+    const sql = `
+    SELECT genero, COUNT(genero) quantidade
+    FROM musica
+    GROUP BY genero; `
+
+    return database.execute(sql)
+}
+
+function artists() {
+
+    const sql = `
+    SELECT artista, COUNT(artista) 'Musicas cadastradas' 
+    FROM musica
+    GROUP BY artista;
+    `
+
+    return database.execute(sql)
+
+}
+
+
 module.exports = {
     searchAllMusic,
     searchMusicById,
     postMusic,
     deleteMusic,
-    getAllRhythm
+    getAllRhythm,
+    countGenre,
+    artists
 }

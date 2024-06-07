@@ -53,10 +53,26 @@ function getAllRhythm(req, res) {
     })
 }
 
+function countGenre(req, res) {
+    musicModel.countGenre(req, res)
+    .then(genre => {
+        return res.status(200).json(genre)
+    })
+}
+
+function artists(req, res) {
+    musicModel.artists(req, res)
+    .then(artists => {
+        return res.status(200).json(artists)
+    })
+}
+
 module.exports = {
     searchAllMusic,
     searchMusicById,
     postMusic,
     deleteMusic,
-    getAllRhythm
+    getAllRhythm,
+    countGenre,
+    artists
 }

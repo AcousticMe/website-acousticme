@@ -10,7 +10,6 @@ function getAllMusic(api) {
         .then(response => response.json())
         .then(data => {
 
-
             data.forEach(element => {
 
                 const table = document.createElement('tr')
@@ -47,7 +46,7 @@ function deleteMusic(id) {
 
                     warningDelete.style.display = "none"
 
-                }, 3000)
+                }, 3333)
 
             }
 
